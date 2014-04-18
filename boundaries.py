@@ -82,6 +82,9 @@ if __name__ == '__main__':
     if args.boundary not in BOUNDARY_META:
         print 'Error: need to specify boundary from %s' % ','.join(BOUNDARY_META)
         sys.exit(0)
+    if not BING_API_KEY:
+        print 'Error: you need to set the BING_API_KEY environment variable'
+        sys.exit(0)
     addr = geocode_address(args.address)
     if not addr:
         print 'Error: unable to geocode address %s' % args.address
