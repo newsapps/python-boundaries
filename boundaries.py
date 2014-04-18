@@ -20,6 +20,7 @@ BOUNDARY_META = [
     'planning-districts', 'planning-regions', 'police-areas', '2010-police-areas', 'police-beats',
     '2010-police-beats', 'police-districts', '2010-police-districts']
 
+
 def get_boundaries_for(lat, lng, boundary):
     """
     Given geo coordinates and a boundary type, return what boundary service
