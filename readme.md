@@ -10,7 +10,9 @@ You'll also need to have requests installed; probably you'll want to run this in
 that reason.
 
 To use the tool as a command-line utility, pass it an address and a boundary type:
+
     python boundaries.py "435 n michigan, chicago" police-beats
 
 To see the supported boundary types:
+
     python boundaries.py --help
